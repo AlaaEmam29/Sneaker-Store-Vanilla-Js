@@ -80,7 +80,7 @@ const products = [
   let randomProduct = products[0];
   
 const mainSlider = document.querySelector(".wrapper-slider")
-const navBtns = [...document.querySelectorAll(".nav-bottom a")]
+const navBtns = [...document.querySelectorAll(".links-container a")]
 const productTitle = document.querySelector(".product-title")
 const productPrice = document.querySelector(".product-price")
 const productImg = document.querySelector(".img")
