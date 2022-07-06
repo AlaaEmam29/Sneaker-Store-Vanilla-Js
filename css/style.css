@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+
+  overflow-x: hidden;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  width: 100% !important;
+}
+.links li {
+  margin-bottom: 1.2rem;
+}
+.search-md i {
+  position: relative;
+  left: 20%;
+}
+.search-md input {
+  width: 75%;
+}
+
+.bars-icon {
+  cursor: pointer;
+}
+.bars-icon,
+.search-md {
+  display: block !important;
+}
+nav {
+  background-color: #000;
+  position: absolute;
+  z-index: 1111;
+  width: 100%;
+}
+.search,
+.limit-offer {
+  display: none !important;
+}
+
+.search,
+.search-md {
+  border-radius: 10px;
+}
+.lins li {
+  margin-bottom: 1rem !important;
+}
+.search input::placeholder {
+  letter-spacing: 0.25rem;
+  color: #fff;
+}
+.limit-offer {
+  font-size: 1.2rem;
+  border-bottom: 2px solid green;
+  cursor: pointer;
+}
+.home-slider {
+  background-image: url(../images/bg.avif);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+.wrapper-slider {
+  width: 500vw;
+  transition: all 1.5s ease-in-out;
+}
+.slider-item {
+  position: relative;
+  width: 100vw;
+}
+.slider-item::before {
+  content: "";
+  width: 750px;
+  height: 750px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  z-index: -1;
+}
+.slider-item:nth-child(1)::before {
+  background-color: #369e62;
+}
+.slider-item:nth-child(2)::before {
+  background-color: rebeccapurple;
+}
+.slider-item:nth-child(3)::before {
+  background-color: teal;
+}
+.slider-item:nth-child(4)::before {
+  background-color: cornflowerblue;
+}
+.slider-item:nth-child(5)::before {
+  background-color: rgb(124, 115, 80);
+}
+.price-title {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font: 2rem;
+}
+.show-info {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+.btn-buy,
+.show-info h1 {
+  font-weight: 900;
+}
+.btn-buy {
+  position: absolute;
+  bottom: -60%;
+  font: 2.2rem;
+  letter-spacing: 0.15rem;
+  background-color: #000;
+  border: 1px solid #333;
+  color: #fff;
+  right: -15%;
+}
+.title {
+  letter-spacing: 0.25rem;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+.product {
+  background-color: whitesmoke;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+.product-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.size {
+  padding: 5px 25px;
+  border: 1px solid black;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.color:first-child {
+  background-color: black;
+}
+.color:last-child {
+  background-color: darkblue;
+}
+.payment {
+  width: 500px;
+  height: fit-content;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 50px;
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+}
+.payment {
+  position: relative;
+}
+.pay-title {
+  color: lightgray;
+}
+.cards img {
+  width: 50px;
+  height: 50px;
+}
+.payment button {
+  width: inherit;
+  position: absolute;
+  left: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.gallery h4 {
+  font-weight: 900;
+}
+.collection img {
+  height: 500px;
+}
+.footer-title {
+  font-weight: bold;
+}
+.icons i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.email-join {
+  width: 75%;
+}
+.product .row {
+  height: 100vh;
+}
+@media screen and (max-width: 767.98px) {
+  .collection h3,
+  .collection h1 {
+    font-size: 1rem !important;
+  }
+  .btn-size {
+    font-size: 12px;
+  }
+  .email-join {
+    width: 100%;
+  }
+  .collection img {
+    height: 400px;
+  }
+
+  .product .row {
+    height: auto;
+  }
+  .img {
+    width: 100%;
+  }
+  .payment {
+    width: 350px;
+  }
+  .slider-item::before {
+    width: 500px;
+    height: 500px;
+  }
+  .slider-item img {
+    width: 100%;
+  }
+  .price-title,
+  .show-info {
+    top: 5%;
+  }
+  .show-info {
+    right: 10%;
+  }
+  .price-title {
+    left: 5%;
+  }
+  .btn-buy,
+  .show-info h1 {
+    font-weight: 400;
+  }
+  .btn-buy {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  .limit-offer,
+  .search {
+    display: block !important;
+  }
+  .bars-icon,
+  .search-md {
+    display: none !important;
+  }
+}
