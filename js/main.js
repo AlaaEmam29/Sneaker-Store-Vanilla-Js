@@ -152,5 +152,3 @@ if (navHeight == 0) {
 }
   })
 
-  const navListHeight = navList.getBoundingClientRect().height
-console.log(navListHeight)
